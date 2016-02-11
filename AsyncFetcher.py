@@ -230,6 +230,7 @@ class _ConnectionManager(object):
 		status = {}
 		for h, c in self.__connections.iteritems():
 			status['waiting_host_connections.%s' % h] = len(c)
+		return status
 
 
 # ------------------------------------------------------------------------------------
